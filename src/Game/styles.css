@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.board_row {
+  display: flex;
+}
+
+.tile {
+  color: lightgray;
+}
+
+.tile.snake {
+  color: black;
+}
+
+.tile.food {
+  color: red;
+}
