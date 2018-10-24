@@ -1,6 +1,17 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(238, 238, 238);
+}
+
 .header {
   display: flex;
   justify-content: center;
+}
+
+.header span {
+  padding: 20px;
+  font-size: 28px;
 }
 
 .main {
@@ -16,6 +27,7 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
+  border: 1px solid black;
 }
 
 .board_row {
@@ -23,7 +35,7 @@
 }
 
 .tile {
-  color: lightgray;
+  color: white;
 }
 
 .tile.snake {
@@ -32,4 +44,22 @@
 
 .tile.food {
   color: red;
+}
+
+.points {
+  margin-top: 8px;
+  font: 400 11px system-ui;
+  font-size: 16px;
+}
+
+.button_start {
+  padding: 16px;
+  border: none;
+  background-color: rgb(107, 255, 87);
+  /* color: white; */
+  border-radius: 4px;
+  margin-top: 16px;
+  cursor: pointer;
+  min-width: 150px;
+  font-size: 16px;
 }
