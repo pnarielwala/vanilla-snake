@@ -16,7 +16,7 @@ const INIT_STATE = {
 
 export default class Game {
   constructor() {
-    this.state = INIT_STATE
+    this.state = { ...INIT_STATE }
     this.onDirectionSelect = this.onDirectionSelect.bind(this)
     this.isFood = this.isFood.bind(this)
     this.isSnakePart = this.isSnakePart.bind(this)
@@ -197,7 +197,7 @@ export default class Game {
     document.getElementById('start_button').disabled = true
     this.resetPoints()
     this.clearBoard()
-    this.state = INIT_STATE
+    this.state = { ...INIT_STATE }
     this.state.food = this.getNewFood()
     this.state.gameStatus = 'playing'
 
